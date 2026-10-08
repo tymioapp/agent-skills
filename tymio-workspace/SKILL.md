@@ -1,6 +1,6 @@
 ---
 name: tymio-workspace
-version: 1.1.0
+version: 1.1.1
 description: >-
   Works with Tymio (tymio.app) via MCP or REST — connect, authenticate (OAuth
   first; never assume an authenticated session), map everyday language to hub
@@ -50,6 +50,7 @@ Treat any of these as **blocked on auth** — stop and fix auth before backlog w
 | **Cursor / IDE shows `mcp_auth` for the Tymio server** | Call **`mcp_auth` with `{}`** once (per server instructions). Do **not** skip this to “try a tool first.” Wait for the user to finish the browser flow if the client opens one. |
 | **Remote Streamable HTTP** | Prefer **`…/t/<slug>/mcp`** for any server meant to edit backlog. Root **`…/mcp`** is fine for a **separate** “Tymio discovery” entry if the user wants OAuth then copy workspace URLs. |
 | **Stdio `@tymio/mcp-server`** | For full tools, set **`TYMIO_MCP_URL`** / **`tymio-mcp login`** to **`…/t/<slug>/mcp`**. Root **`…/mcp`** only proxies the two discovery tools unless the user changes URL. Ensure **`TYMIO_API_KEY` / `API_KEY` are unset** (legacy **`DRD_API_KEY`** unset) for OAuth proxy mode. |
+| **Cursor Cloud Agents** | Desktop/IDE OAuth does **not** apply. User must add **HTTP** MCP **`https://<host>/t/<slug>/mcp`** on **[cursor.com/agents](https://cursor.com/agents)** and complete **Connect / Sign in** there (separate per-user session). Do **not** tell them to paste **`TYMIO_API_KEY`** into Cloud Agent Secrets for this path. |
 
 ### 3. Verify after OAuth
 

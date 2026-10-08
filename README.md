@@ -10,7 +10,7 @@ Website: [tymio.app](https://tymio.app) · Context for agents: [llms.txt](https:
 
 | Id | Role | Version |
 | --- | --- | --- |
-| [`tymio-workspace`](./tymio-workspace/) | Connect, OAuth, multi-workspace, hub ontology, closeout | 1.1.0 |
+| [`tymio-workspace`](./tymio-workspace/) | Connect, OAuth, multi-workspace, hub ontology, closeout | 1.1.1 |
 | [`tymio-pm-agent`](./tymio-pm-agent/) | Product Manager — portfolio / roadmap | 1.1.0 |
 | [`tymio-po-agent`](./tymio-po-agent/) | Product Owner — initiative / features / requirements | 1.1.0 |
 | [`tymio-dev-agent`](./tymio-dev-agent/) | Developer — implement against hub scope + closeout | 1.1.0 |
